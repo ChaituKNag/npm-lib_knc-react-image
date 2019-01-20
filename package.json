@@ -1,0 +1,20 @@
+{
+  "name": "knc-react-image",
+  "version": "0.0.2",
+  "description": "A react library to lazy-load images",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "lazy",
+    "load"
+  ],
+  "author": "Naga Chaitanya Konada <nkonada@deloitte.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.7.0"
+  }
+}
