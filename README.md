@@ -1,4 +1,4 @@
-#knc-react-image
+# knc-react-image
 
 A simple react-library to lazy-load images
 
