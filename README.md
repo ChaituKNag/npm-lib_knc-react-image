@@ -1,25 +1,25 @@
-# knc-react-image
+# react-image-lazy-prefetch
 
-A simple react-library to lazy-load images
+A simple react-library to lazy-load or prefetch images
 
 ## Usage
 
 Add to your package like this:
 
 ```bash
-    npm install --save knc-react-image
+    npm install --save react-image-lazy-prefetch
 ```
 
 Or using Yarn:
 
 ```bash
-    yarn add knc-react-image
+    yarn add react-image-lazy-prefetch
 ```
 
 ### Then in your component
 
 ```javascript
-import Image from 'knc-react-image';
+import Image from 'react-image-lazy-prefetch';
 
 const MyComp = () => {
     const imgSrc=`https://picsum.photos/200/300`
@@ -37,7 +37,7 @@ You can add the below optional params:
 
 ## Peer dependency
 
-Only, one: `react`
+Only, one: `react` (latest if possible).
 
 ## License
 
