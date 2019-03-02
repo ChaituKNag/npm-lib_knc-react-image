@@ -14,14 +14,12 @@
   ],
   "author": "Naga Chaitanya Konada <knc@outlook.in>",
   "license": "MIT",
-  "dependencies": {
-    "react": "16.8.3"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ChaituKNag/npm-lib_knc-react-image"
   },
   "peerDependencies": {
-    "react": "16.8.3"
-  }
+    "react": "^16.8.3"
+  },
+  "devDependencies": {}
 }
