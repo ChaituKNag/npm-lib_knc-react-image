@@ -2,8 +2,10 @@
   "name": "react-image-lazy-prefetch",
   "version": "0.0.5",
   "description": "A react library to lazy-load or prefetch images",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,7 +23,14 @@
   "peerDependencies": {
     "react": "^16.8.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.3.4",
+    "@babel/preset-env": "7.3.4",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.5",
+    "webpack": "4.29.6",
+    "webpack-cli": "3.2.3"
+  },
   "dependencies": {
     "react": "16.8.3"
   }
