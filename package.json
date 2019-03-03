@@ -1,6 +1,6 @@
 {
   "name": "react-image-lazy-prefetch",
-  "version": "0.0.5",
+  "version": "0.0.5-beta01",
   "description": "A react library to lazy-load or prefetch images",
   "main": "lib/index.js",
   "scripts": {
