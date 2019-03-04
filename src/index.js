@@ -1,4 +1,5 @@
 const React = require('react');
+const {useState, useRef, useEffect} = require('react');
 
 class ReactImage extends React.Component {
     
@@ -52,4 +53,44 @@ class ReactImage extends React.Component {
     }
 }
 
-module.exports = ReactImage;
+const ReactImageFn = ({ src, style = {}, width, height}) => {
+
+    const [count, setCount] = useState(0);
+    const imageRef = useRef();
+
+    style.width = width || `400px`;
+    style.height = height || `600px`;
+
+    useEffect(() => {
+        if(_checkImageVisible()) {
+            imageRef.current.src = src;
+        } else {
+            // image not visible yet
+            window.addEventListener('scroll', handleScroll);
+        }
+    }, []);
+
+    function handleScroll(e) {
+        console.log('event handler called');
+        if(_checkImageVisible()) {
+            imageRef.current.src = src;
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }
+
+    
+    function _checkImageVisible() {
+        const image = imageRef.current;
+        const imageTop = image.offsetTop;
+        const threshold = window.scrollY + (.8 * window.innerHeight);
+
+        return (imageTop < threshold);
+    }
+
+    return (
+        <img style={style} ref={imageRef}/>
+    );
+}
+
+// module.exports = ReactImage;
+module.exports = ReactImageFn;
