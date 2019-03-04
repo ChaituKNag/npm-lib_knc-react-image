@@ -1,6 +1,6 @@
 {
   "name": "knc-react-image",
-  "version": "0.0.2",
+  "version": "0.0.3-BETA03",
   "description": "A react library to lazy-load images",
   "main": "src/index.js",
   "scripts": {
@@ -15,13 +15,13 @@
   "author": "Naga Chaitanya Konada <nkonada@deloitte.com>",
   "license": "MIT",
   "dependencies": {
-    "react": "16.7.0"
+    "react": "16.8.3"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ChaituKNag/npm-lib_knc-react-image"
+    "type": "git",
+    "url": "https://github.com/ChaituKNag/npm-lib_knc-react-image"
   },
   "peerDependencies": {
-    "react": "16.7.0"
+    "react": "16.8.3"
   }
 }
